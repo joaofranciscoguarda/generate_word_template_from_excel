@@ -1,5 +1,5 @@
-import glob
-import os
+
+import os, glob
 from email.mime import base
 from pathlib import Path
 
@@ -10,8 +10,8 @@ from docxtpl import DocxTemplate
 def main ():
 
     base_dir = Path(__file__).parent
-    word_template_path =  base_dir / glob.glob('./*docx')
-    excel_path = base_dir  / glob.glob('./*xlsx')
+    word_template_path =  base_dir / glob.glob('./*docx')[0]
+    excel_path = base_dir  / glob.glob('./*xlsx')[0]
     output_dir = base_dir / 'OUTPUTS'
 
     output_dir.mkdir(exist_ok=True)
@@ -38,4 +38,3 @@ def main ():
 if __name__ == '__main__':
     main()
 
-# Marcos Aurélio Chaves
