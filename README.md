@@ -19,7 +19,7 @@ Make sure that they are installed by running `pip freeze`.
 
 ## How to make your word template
 
-To make your template, you simply have to add the {{column name}} in this format in the word document, the column name needs to be the same that exists in the excel file, see the example templates. \
+To make your word template, you simply have to add the {{column name}} in this format in the word document, the column name needs to be the same that exists in the excel file, but the column name can not have number in the beginning and can not have special characters in any position or spaces, for this objectivo use "_", see the example templates. \
 \
 Note: There are no script, so you can delete the example template files, the only rule is that you can't add more than one excel(.xlsx) file or more than one word (.docx) file in the same directory as the word_automation.py file.
 
